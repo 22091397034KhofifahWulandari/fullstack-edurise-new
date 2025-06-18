@@ -195,26 +195,37 @@ const PenilaianManagement = () => {
 
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
-            <header className="bg-white shadow-sm p-4 flex justify-between items-center">
-                <div className="flex items-center space-x-4">
-                    <Link to="/adminhome" className="text-gray-600 hover:text-gray-800">
-                        <ArrowLeft size={24} />
-                    </Link>
-                    <h1 className="text-2xl font-semibold text-gray-800">Manajemen Penilaian Esai</h1>
+            <header className="bg-white h-[60px] px-5 shadow-md fixed top-0 left-0 right-0 z-50 flex items-center">
+                <div className="w-full flex justify-between items-center">
+                    <div className="flex items-center">
+                        <Link
+                            to="/adminhome"
+                            className="mr-3 text-gray-600 hover:text-gray-900"
+                        >
+                        <ArrowLeft className="w-5 h-5" />
+                        </Link>
+                        <div className="rounded-full overflow-hidden flex items-center justify-center mr-3">
+                            <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[40px] h-[40px] object-contain" />
+                        </div>
+                        <h4 className="m-0 italic font-bold ml-2"> <span className="text-[#3375cc]">EDU<span className="text-[#dda853]">RISE</span></span> ADMIN</h4>
+                    </div>
                 </div>
             </header>
 
-            <main className="flex-1 p-6">
+            <main className="flex-1 p-15 pt-[80px]">
                 <div className="bg-white rounded-lg shadow-md p-6">
                     <div className="flex justify-between items-center mb-6">
                         <h2 className="text-xl font-bold text-gray-700">Daftar Esai yang Dikirim</h2>
                         <div className="flex items-center space-x-3">
-                            <div className="relative">
-                                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+                            <div className="relative flex items-center">
+                                <Search
+                                    className="absolute left-3 text-gray-400 pointer-events-none"
+                                    size={18}
+                                />
                                 <input
                                     type="text"
-                                    placeholder="Cari esai atau nama pengirim..."
-                                    className="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Cari nama pengirim"
+                                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
                                 />

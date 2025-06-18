@@ -217,8 +217,8 @@ const LandingBefore = () => {
                     Review progres pendaftaran beasiswamu bersama mentor
                     professional dibidangnya
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    to="/login"
                     className="text-[#3375CC] font-semibold inline-flex items-center justify-center transition duration-300 hover:text-blue-700"
                   >
                     <span className="mr-1">Mulai</span>
@@ -235,7 +235,7 @@ const LandingBefore = () => {
                     >
                       <path d="m9 18 6-6-6-6" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -256,8 +256,8 @@ const LandingBefore = () => {
                     Pelajari edukasi dan tips seputar beasiswa, memperbesar
                     peluangmu diterima beasiswa
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    to="/login"
                     className="text-[#3375CC] font-semibold inline-flex items-center justify-center transition duration-300 hover:text-blue-700"
                   >
                     <span className="mr-1">Mulai</span>
@@ -274,7 +274,7 @@ const LandingBefore = () => {
                     >
                       <path d="m9 18 6-6-6-6" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -295,8 +295,8 @@ const LandingBefore = () => {
                     Kami berusaha untuk selalu memberikan informasi beasiswa
                     terupdate dari sumber faktual
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    to="/login"
                     className="text-[#3375CC] font-semibold inline-flex items-center justify-center transition duration-300 hover:text-blue-700"
                   >
                     <span className="mr-1">Mulai</span>
@@ -313,7 +313,7 @@ const LandingBefore = () => {
                     >
                       <path d="m9 18 6-6-6-6" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

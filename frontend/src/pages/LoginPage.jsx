@@ -46,14 +46,14 @@ const LoginPage = () => {
                     <div className="container mx-auto px-4 h-full flex items-center justify-between">
                         <div className="flex items-center">
                             <Link className="flex items-center" to="/">
-                                <div className="w-[84px] h-[84px] rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm">
-                                    <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[70px] h-[70px] object-contain" />
+                                <div className="rounded-full overflow-hidden flex items-center justify-center">
+                                    <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[50px] h-[50px] object-contain" />
                                 </div>
                             </Link>
                             <div className="hidden lg:flex ml-8">
                                 <ul className="flex space-x-6">
                                     <li><Link className="font-bold" to="/">HOME</Link></li>
-                                    <li><Link className="font-bold text-[#3375CC] !text-[#3375CC] !underline underline" to="/login">LOGIN PAGE</Link></li>
+                                    <li><Link className="font-bold text-[#3375CC] underline" to="/login">LOGIN PAGE</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -65,10 +65,10 @@ const LoginPage = () => {
             </header>
 
             <main>
-                <section className="flex justify-center items-center min-h-[calc(100vh-76px)] px-5 mt-20 mb-20">
+                <section className="flex justify-center items-center min-h-[calc(100vh-76px)] px-5 mt-30 mb-5">
                     <div className="w-full max-w-[1130px] h-[720px] bg-white rounded-lg overflow-hidden shadow-md mx-auto">
                         <div className="flex flex-col md:flex-row h-full">
-                            <div className="w-full md:w-1/2 flex items-start justify-center p-10 pt-20">
+                            <div className="w-full md:w-1/2 flex items-center justify-center p-10">
                                 <div className="w-full max-w-[400px]">
                                     <div className="text-center mb-[85px]">
                                         <h2 className="text-2xl font-bold">

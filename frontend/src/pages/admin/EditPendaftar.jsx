@@ -94,7 +94,7 @@ const EditPendaftar = () => {
     return (
         <div className="min-h-screen bg-[#f9fafb]">
             {/* Header */}
-            <header className="bg-white h-[60px] px-5 shadow-sm fixed top-0 left-0 right-0 z-50">
+            <header className="bg-white h-[60px] px-5 shadow-md fixed top-0 left-0 right-0 z-50">
                 <div className="w-full flex justify-between items-center h-full">
                     <div className="flex items-center">
                         <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm mr-3">
@@ -102,7 +102,7 @@ const EditPendaftar = () => {
                         </div>
                         <h4 className="m-0 italic font-bold ml-2">EDURISE ADMIN</h4>
                     </div>
-                    <Link to="/adminhome" className="w-10 h-10 rounded-full bg-[#3375CC] text-white !text-white flex items-center justify-center">
+                    <Link to="/adminhome" className="w-10 h-10 rounded-full bg-[#3375CC] text-white flex items-center justify-center">
                         <User size={24} />
                     </Link>
                 </div>

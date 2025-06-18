@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Plus, Edit, Trash, ArrowLeft, Filter } from 'lucide-react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
@@ -241,17 +242,23 @@ const WebinarAdmin = () => {
 
     return (
         <div className="min-h-screen bg-[#f9fafb]">
-            <header className="bg-white h-[60px] px-5 shadow-sm fixed top-0 left-0 right-0 z-50 flex items-center">
+            <header className="bg-white h-[60px] px-5 shadow-md fixed top-0 left-0 right-0 z-50 flex items-center">
                 <div className="w-full flex justify-between items-center">
                     <div className="flex items-center">
-                        <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm mr-3">
-                            <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[34px] h-[34px] object-contain" />
+                        <Link
+                            to="/adminhome"
+                            className="mr-3 text-gray-600 hover:text-gray-900"
+                        >
+                        <ArrowLeft className="w-5 h-5" />
+                        </Link>
+                        <div className="rounded-full overflow-hidden flex items-center justify-center mr-3">
+                            <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[40px] h-[40px] object-contain" />
                         </div>
-                        <h4 className="m-0 italic font-bold ml-2">EDURISE ADMIN</h4>
+                        <h4 className="m-0 italic font-bold ml-2"> <span className="text-[#3375cc]">EDU<span className="text-[#dda853]">RISE</span></span> ADMIN</h4>
                     </div>
                 </div>
             </header>
-            <main className="pt-[80px] px-6 pb-[30px] min-h-screen bg-[#f9fafb] max-w-4xl mx-auto">
+            <main className="pt-[80px] p-15 min-h-screen bg-[#f9fafb] mx-auto">
                 <div className="bg-white rounded-lg shadow-md p-6 mb-6">
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-xl font-semibold">Daftar Webinar</h2>

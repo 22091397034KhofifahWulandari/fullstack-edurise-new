@@ -79,7 +79,7 @@ const ArtikelAdmin = () => {
     return (
         <div className="min-h-screen bg-[#f9fafb]">
             {/* Top header bar - fixed position */}
-            <header className="bg-white h-[60px] px-5 shadow-sm fixed top-0 left-0 right-0 z-50 flex items-center">
+            <header className="bg-white h-[60px] px-5 shadow-md fixed top-0 left-0 right-0 z-50 flex items-center">
                 <div className="w-full flex justify-between items-center">
                     <div className="flex items-center">
                         <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm mr-3">
@@ -94,7 +94,7 @@ const ArtikelAdmin = () => {
             </header>
 
             {/* Sidebar navigation */}
-            <nav className="bg-[#1e3a8a] !bg-[#1e3a8a] text-white p-6 pt-[10px] fixed top-0 left-0 h-screen w-[250px] overflow-y-auto z-40">
+            <nav className="bg-[#1e3a8a] text-white p-6 pt-[10px] fixed top-0 left-0 h-screen w-[250px] overflow-y-auto z-40">
                 <div className="space-y-6 text-white">
                     {/* Main Menu Group */}
                     <div>

@@ -5,7 +5,7 @@ import "../index.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav>
       <img src={logo} alt="Logo" />
 
       {/* Home */}

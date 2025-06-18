@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Edit, Trash, Plus, User, LayoutDashboard } from 'lucide-react';
+import { Edit, Trash, Plus, User, ArrowLeft, LayoutDashboard } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import axios from 'axios'; // Import axios for API calls
 
@@ -217,32 +217,30 @@ const DiskusiManagement = () => {
     return (
         <div className="min-h-screen">
             {/* Header */}
-            <header className="bg-white h-[60px] px-5 shadow-sm fixed top-0 left-0 right-0 z-50 flex items-center">
+            <header className="bg-white h-[60px] px-5 shadow-md fixed top-0 left-0 right-0 z-50 flex items-center">
                 <div className="w-full flex justify-between items-center">
                     <div className="flex items-center">
-                        <Link to="/adminhome" className="flex items-center">
-                            <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm mr-3">
-                                <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[34px] h-[34px] object-contain" />
-                            </div>
+                        <Link
+                            to="/adminhome"
+                            className="mr-3 text-gray-600 hover:text-gray-900"
+                        >
+                        <ArrowLeft className="w-5 h-5" />
                         </Link>
-                        <h4 className="m-0 italic font-bold ml-2">EDURISE ADMIN</h4>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <Link to="/adminhome" className="text-gray-700 hover:text-[#3375CC]">Dashboard</Link>
-                        <Link to="/data-admin" className="w-10 h-10 rounded-full bg-[#3375CC] text-white !text-white flex items-center justify-center">
-                            <User size={24} />
-                        </Link>
+                        <div className="rounded-full overflow-hidden flex items-center justify-center mr-3">
+                            <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[40px] h-[40px] object-contain" />
+                        </div>
+                        <h4 className="m-0 italic font-bold ml-2"> <span className="text-[#3375cc]">EDU<span className="text-[#dda853]">RISE</span></span> ADMIN</h4>
                     </div>
                 </div>
             </header>
 
             {/* Main content */}
-            <main className="mt-[100px] p-5 bg-[#f9fafb] min-h-[calc(100vh-60px)]">
+            <main className="mt-[60px] p-10 bg-[#f9fafb] min-h-[calc(100vh-60px)]">
                 <div className="max-w-[1400px] mx-auto">
-                    <header className="mb-8">
+                    <div className="mb-8">
                         <h1 className="text-2xl font-bold mb-2">Manajemen Forum Diskusi</h1>
                         <p className="text-gray-600">Kelola forum diskusi dan partisipan</p>
-                    </header>
+                    </div>
 
                     {/* Statistics Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">

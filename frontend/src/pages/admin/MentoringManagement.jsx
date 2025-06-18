@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Edit, Trash, Plus, Frown, Eye, LayoutDashboard, User } from 'lucide-react';
+import { Edit, Trash, Plus, Frown, Eye, LayoutDashboard, ArrowLeft, User } from 'lucide-react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -222,24 +222,27 @@ const MentoringManagement = () => {
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
             {/* Header */}
-            <header className="bg-white h-[60px] px-5 shadow-sm fixed top-0 left-0 right-0 z-50 flex items-center">
+            <header className="bg-white h-[60px] px-5 shadow-md fixed top-0 left-0 right-0 z-50 flex items-center">
                 <div className="w-full flex justify-between items-center">
                     <div className="flex items-center">
-                        <Link to="/adminhome" className="flex items-center">
-                            <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm mr-3">
-                                {/* Assuming this image path is correct */}
-                                <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[34px] h-[34px] object-contain" />
-                            </div>
+                        <Link
+                            to="/adminhome"
+                            className="mr-3 text-gray-600 hover:text-gray-900"
+                        >
+                        <ArrowLeft className="w-5 h-5" />
                         </Link>
-                        <h4 className="m-0 italic font-bold ml-2">EDURISE ADMIN</h4>
+                        <div className="rounded-full overflow-hidden flex items-center justify-center mr-3">
+                            <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[40px] h-[40px] object-contain" />
+                        </div>
+                        <h4 className="m-0 italic font-bold ml-2"> <span className="text-[#3375cc]">EDU<span className="text-[#dda853]">RISE</span></span> ADMIN</h4>
                     </div>
                 </div>
             </header>
 
             {/* Main content */}
-            <main className="mt-[100px] p-5">
+            <main className="mt-[60px] p-10">
                 <div className="max-w-[1400px] mx-auto">
-                    <h1 className="text-3xl font-bold text-gray-800 mb-6">Manajemen Sesi Mentoring</h1>
+                    <h1 className="text-2xl font-bold text-gray-800 mb-6">Manajemen Sesi Mentoring</h1>
 
                     {/* Statistik */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

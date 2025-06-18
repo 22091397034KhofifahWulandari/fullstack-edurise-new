@@ -6,60 +6,40 @@ const DataAdmin = () => {
 
     return (
         <>
-            <header>
-                <nav className="bg-white shadow-md h-[100px] relative">
-                    <div className="container mx-auto px-4 h-full flex items-center justify-between">
-                        {/* Logo */}
-                        <Link to="/adminhome" className="flex items-center mr-10">
-                            <div className="w-[84px] h-[84px] rounded-full overflow-hidden flex items-center justify-center bg-white shadow-sm">
-                                <img src="/img/eduriselanding/Ellipse 1.png" alt="EduRise Logo" className="w-[70px] h-[70px] object-contain" />
-                            </div>
-                        </Link>
-
-                        {/* Mobile Toggle Button */}
-                        <button
-                            className="lg:hidden p-2 rounded-md focus:outline-none"
-                            type="button"
-                            aria-controls="navbarNav"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span className="block w-6 h-0.5 bg-gray-800 my-1"></span>
-                            <span className="block w-6 h-0.5 bg-gray-800 my-1"></span>
-                            <span className="block w-6 h-0.5 bg-gray-800 my-1"></span>
-                        </button>
-
-                        {/* Navigation Links */}
-                        <div className="hidden lg:flex lg:items-center lg:ml-5 flex-grow" id="navbarNav">
-                            <ul className="flex gap-10 items-center">
-                                <li>
-                                    <Link to="/adminhome" className="px-4 py-2.5 font-medium text-[#3375CC] !text-[#3375CC] rounded-md"><u>HOME</u></Link>
-                                </li>
-                                <li>
-                                    <Link to="/data-admin" className="px-4 py-2.5 font-medium text-[#3375CC] !text-[#3375CC] rounded-md bg-blue-100/30 transition duration-200"><u>ADMIN</u></Link>
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Admin Logout Button */}
-                        <div>
-                            <Link to="/loginadmin">
-                                <button
-                                    className="w-[67px] h-[36px] flex items-center justify-center rounded-lg bg-[#3375CC] text-white font-semibold text-sm shadow-md hover:bg-[#295ea3] hover:-translate-y-0.5 transition duration-200"
-                                >
-                                    Logout
-                                </button>
-                            </Link>
-                        </div>
+            <header className="bg-white shadow-md h-[80px] fixed top-0 left-0 right-0 z-50">
+            <div className="container mx-auto px-4 h-full flex items-center justify-between">
+                
+                {/* Kiri: Logo + Tulisan */}
+                <div className="flex items-center space-x-3">
+                <Link to="/adminhome" className="flex items-center">
+                    <div className="rounded-full overflow-hidden flex items-center justify-center">
+                    <img
+                        src="/img/eduriselanding/Ellipse 1.png"
+                        alt="EduRise Logo"
+                        className="w-[50px] h-[50px] object-contain"
+                    />
                     </div>
-                </nav>
+                </Link>
+                <h1 className="text-xl font-bold text-[#3375cc] italic">
+                    Profile <span className="text-[#dda853]">Admin</span>
+                </h1>
+                </div>
+
+                {/* Kanan: Tombol Logout */}
+                <Link to="/loginadmin">
+                <button className="w-[80px] h-[36px] flex items-center justify-center rounded-lg bg-[#3375CC] text-white font-semibold text-sm shadow-md hover:bg-[#295ea3] hover:-translate-y-0.5 transition duration-200">
+                    Logout
+                </button>
+                </Link>
+
+            </div>
             </header>
 
-            <main className="flex justify-center items-center min-h-screen py-20 px-4">
+            <main className="flex justify-center items-center min-h-screen pt-[120px] px-4 pb-10">
                 <div
                     className="flex flex-col items-center w-[1181px] h-[797px] p-[30px] gap-6 flex-shrink-0 rounded-lg border border-[#3375CC] bg-[#F9FAFB] overflow-y-auto"
                 >
-                    <h2 className="text-2xl font-bold text-[#3375CC] mb-4 mt-8">Edit Data Admin</h2>
+                    <h2 className="text-2xl font-bold text-gray-800 mb-4 mt-8">Edit Data Admin</h2>
 
                     <form className="w-full max-w-[800px] px-8 py-6 space-y-6">
                         <div className="mb-4">
